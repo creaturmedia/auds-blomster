@@ -12,6 +12,10 @@
 // @import "~some-node-module";
 
 /** Import theme styles */
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:400,500,700");
+@import "common/functions";
+@import "common/breakpoints";
+@import "common/reset";
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";

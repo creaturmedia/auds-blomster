@@ -136,3 +136,14 @@ function display_sidebar()
     isset($display) || $display = apply_filters('sage/display_sidebar', false);
     return $display;
 }
+
+
+/**
+ * Return path of requested svg file
+ * @param  string $file File name
+ * @return string       file path
+ */
+function svg_path($file)
+{
+    return get_template_directory() . '/assets/svg/' . $file;
+}

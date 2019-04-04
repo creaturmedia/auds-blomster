@@ -129,4 +129,33 @@ add_action('after_setup_theme', function () {
     sage('blade')->compiler()->directive('asset', function ($asset) {
         return "<?= " . __NAMESPACE__ . "\\asset_path({$asset}); ?>";
     });
+    /**
+     * Create @svg() Blade directive
+     */
+    sage('blade')->compiler()->directive('svg', function ($arguments) {
+        // Accept multiple arguments
+        list($path, $class) = array_pad(explode(',', trim($arguments, "() ")), 2, '');
+        $path = trim($path, "' ");
+        $class = trim($class, "' ");
+
+        // Create the DOM document to remove the XML version element
+        $svg = new \DOMDocument();
+        $svg->load(svg_path($path));
+        $svg->documentElement->setAttribute("class", $class);
+        $output = $svg->saveXML($svg->documentElement);
+
+        return $output;
+    });
+
+});
+
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page();
+}
+
+add_shortcode( 'button', function ( $atts, $content = null ) {
+	$a = shortcode_atts( array(
+		'link' => '#'
+	), $atts );
+	return '<p><a href="' . esc_attr($a['link']) . '" class="button">' . $content . '</a></p>';
 });

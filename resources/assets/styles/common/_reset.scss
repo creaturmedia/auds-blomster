@@ -1,0 +1,76 @@
+// CREATUR 2018 RESET STYLES
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%; // allows 10px to equal 1 rem
+  overflow-y: scroll;
+}
+
+body {
+  -ms-overflow-style: scrollbar;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: block;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img,
+object,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+img,
+button,
+object,
+svg,
+hr,
+input,
+textarea {
+  outline: none;
+  border: none;
+  font-family: inherit;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+// END CREATUR 2018 RESET STYLES
