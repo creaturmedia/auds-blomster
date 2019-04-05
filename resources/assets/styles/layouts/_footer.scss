@@ -5,6 +5,13 @@
   padding-bottom: 6rem;
   font-size: 1.8rem;
 
+  .row {
+    @include media-breakpoint-down(xs) {
+      display: block;
+      text-align: center;
+    }
+  }
+
   h2 {
     font-size: 2rem;
     margin-bottom: 3rem;
@@ -17,10 +24,24 @@
   .col {
     &:first-child {
       padding-right: 7.5rem;
+
+      @include media-breakpoint-down(xs) {
+        padding: 0;
+      }
     }
 
     &:last-child {
       padding-left: 7.5rem;
+
+      @include media-breakpoint-down(xs) {
+        padding: 0;
+      }
+    }
+
+    &.col--half {
+      @include media-breakpoint-down(xs) {
+        max-width: none;
+      }
     }
   }
 }

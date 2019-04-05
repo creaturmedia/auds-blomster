@@ -6,7 +6,7 @@
 
 @section('content')
   @while(have_posts()) @php the_post() @endphp
-    @include('partials.page-header')
+    {{-- banner --}}
     @include('partials.content-page')
   @endwhile
 @endsection

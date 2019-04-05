@@ -1,10 +1,15 @@
 .banner {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
 
   .brand {
     img {
       width: 23rem;
       height: auto;
+
+      @include media-breakpoint-down(xs) {
+        height: 4.2rem;
+        width: auto;
+      }
     }
   }
 
@@ -12,6 +17,10 @@
     flex: 1;
     font-size: 2.3rem;
     padding-left: 6.5rem;
+
+    @include media-breakpoint-down(xs) {
+      display: none;
+    }
 
     ul {
       li {
