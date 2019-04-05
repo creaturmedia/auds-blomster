@@ -1,0 +1,4 @@
+resources/assets/styles/common/_reset.scss
+~slick-carousel/slick/slick.scss
+~slick-carousel/slick/slick-theme.scss
+resources/assets/styles/common/_breakpoints.scss
