@@ -12,7 +12,7 @@
 // @import "~some-node-module";
 
 /** Import theme styles */
-@import url("https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:400,500,700");
+@import url("https://use.typekit.net/ivk0rsk.css");
 @import "common/functions";
 @import "common/breakpoints";
 @import "common/reset";
@@ -25,5 +25,7 @@
 @import "layouts/sidebar";
 @import "layouts/footer";
 @import "layouts/pages";
+@import "layouts/splashscreen";
+@import "layouts/frontpage";
 @import "layouts/posts";
 @import "layouts/tinymce";

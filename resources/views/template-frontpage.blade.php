@@ -1,5 +1,5 @@
 {{--
-  Template Name: Custom Template
+  Template Name: Forside
 --}}
 
 @extends('layouts.app')
