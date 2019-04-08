@@ -1,13 +1,13 @@
 .banner {
-  padding: 1.5rem 0;
+  padding: rem(15) 0;
 
   .brand {
     img {
-      width: 23rem;
+      width: rem(230);
       height: auto;
 
       @include media-breakpoint-down(xs) {
-        height: 4.2rem;
+        height: rem(42);
         width: auto;
       }
     }
@@ -15,22 +15,23 @@
 
   .nav-primary {
     flex: 1;
-    font-size: 2.3rem;
-    padding-left: 6.5rem;
+    font-size: rem(23);
+    line-height: rem(33);
+    padding-left: rem(65);
 
     @include media-breakpoint-down(xs) {
       display: none;
     }
+  }
 
-    ul {
-      li {
-        display: inline-block;
+  .menu {
+    &__item {
+      display: inline-block;
 
-        a {
-          color: black;
-          display: block;
-          padding: 0 2rem;
-        }
+      a {
+        color: #000;
+        display: block;
+        padding: 0 rem(20);
       }
     }
   }

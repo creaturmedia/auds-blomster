@@ -1,9 +1,9 @@
 .footer {
   background: $lightgreen;
   color: rgb(92, 92, 92);
-  padding-top: 5.5rem;
-  padding-bottom: 6rem;
-  font-size: 1.8rem;
+  padding-top: rem(55);
+  padding-bottom: rem(60);
+  font-size: rem(18);
 
   .row {
     @include media-breakpoint-down(xs) {
@@ -13,17 +13,18 @@
   }
 
   h2 {
-    font-size: 2rem;
-    margin-bottom: 3rem;
+    font-size: rem(20);
+    line-height: rem(29);
+    margin-bottom: rem(30);
   }
 
   p {
-    margin-bottom: 2rem;
+    margin-bottom: rem(20);
   }
 
   .col {
     &:first-child {
-      padding-right: 7.5rem;
+      padding-right: rem(75);
 
       @include media-breakpoint-down(xs) {
         padding: 0;
@@ -31,7 +32,7 @@
     }
 
     &:last-child {
-      padding-left: 7.5rem;
+      padding-left: rem(75);
 
       @include media-breakpoint-down(xs) {
         padding: 0;
