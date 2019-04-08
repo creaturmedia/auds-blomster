@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/auds-blomster",
-  "devUrl": "http://blomster.test",
+  "devUrl": "http://audsblomster.test",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
