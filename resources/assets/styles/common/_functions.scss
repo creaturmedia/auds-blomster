@@ -9,3 +9,18 @@
 .clearfix {
   @include clearfix;
 }
+
+// Used for easier rem calculation
+// Ex. font-size: rem(20);
+// The number represents the value in pixels
+@function rem($pixels, $context: $baseFontSize) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1rem;
+}
