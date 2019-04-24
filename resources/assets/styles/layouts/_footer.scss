@@ -8,7 +8,6 @@
   .row {
     @include media-breakpoint-down(xs) {
       display: block;
-      text-align: center;
     }
   }
 
@@ -16,6 +15,7 @@
     font-size: rem(20);
     line-height: rem(29);
     margin-bottom: rem(30);
+    font-weight: normal;
   }
 
   p {
@@ -36,6 +36,7 @@
 
       @include media-breakpoint-down(xs) {
         padding: 0;
+        margin-top: rem(70);
       }
     }
 

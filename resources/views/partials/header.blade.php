@@ -10,5 +10,20 @@
       {!! bem_menu('primary_navigation', 'menu') !!}
       @endif
     </nav>
+
+    <button class="hamburger" type="button" aria-label="Toggle navigation">
+      <div class="hamburger__bars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+  </div>
+
+  <div id="mobile-menu">
+    @if (has_nav_menu('primary_navigation'))
+      {!! bem_menu('primary_navigation', 'mobile-menu') !!}
+    @endif
   </div>
 </header>
