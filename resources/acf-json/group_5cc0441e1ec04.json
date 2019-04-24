@@ -1,12 +1,12 @@
 {
-    "key": "group_5ca743abcd785",
-    "title": "Nettside Innstillinger",
+    "key": "group_5cc0441e1ec04",
+    "title": "Side Bilder",
     "fields": [
         {
-            "key": "field_5ca743c2d0a67",
-            "label": "Logo",
-            "name": "logo",
-            "type": "image",
+            "key": "field_5cc044238ba82",
+            "label": "Side Bilder",
+            "name": "side_bilder",
+            "type": "gallery",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,8 +15,9 @@
                 "class": "",
                 "id": ""
             },
-            "return_format": "url",
-            "preview_size": "full",
+            "min": "",
+            "max": "",
+            "insert": "append",
             "library": "all",
             "min_width": "",
             "min_height": "",
@@ -30,19 +31,28 @@
     "location": [
         [
             {
-                "param": "options_page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "acf-options"
+                "value": "default"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "views\/template-frontpage.blade.php"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "normal",
+    "position": "side",
     "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "featured_image"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1556104272
+    "modified": 1556109266
 }

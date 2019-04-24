@@ -4,7 +4,7 @@
     "fields": [
         {
             "key": "field_5ca7219db13bd",
-            "label": "Nettsider",
+            "label": "Sites",
             "name": "sites",
             "type": "repeater",
             "instructions": "",
@@ -121,8 +121,11 @@
     "style": "seamless",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": "",
+    "hide_on_screen": [
+        "the_content",
+        "featured_image"
+    ],
     "active": 1,
     "description": "",
-    "modified": 1554720067
+    "modified": 1556104301
 }

@@ -7,16 +7,21 @@ html {
 body {
   line-height: 1.33;
   font-family: brandon-grotesque, sans-serif;
-  color: $brand-primary;
+  color: rgb(112, 112, 112);
+  font-size: rem(24);
 }
 
-strong,
+strong {
+  font-weight: 500;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-weight: 500;
+  font-weight: 400;
+  color: $brand-primary;
 }
 
 .text-right {
@@ -35,15 +40,28 @@ a {
   color: $brand-primary;
   text-decoration: none;
   transition: background 0.2s linear, color 0.1s linear;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1560px;
   padding: 0 rem(20);
 
   @include media-breakpoint-down(xs) {
     padding: 0 rem(30);
+  }
+}
+
+.content {
+  margin: rem(125) rem(90) rem(240) rem(90);
+
+  @include media-breakpoint-down(xs) {
+    margin: 0;
   }
 }
 

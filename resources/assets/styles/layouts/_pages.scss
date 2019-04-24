@@ -1,0 +1,66 @@
+.page-banner {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__logo {
+    position: absolute;
+    top: rem(100);
+    left: rem(110);
+
+    img {
+      width: rem(266);
+      height: auto;
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    bottom: rem(225);
+    right: rem(300);
+    padding: 0 rem(200);
+    width: rem(650);
+    text-align: center;
+    padding-top: rem(45);
+    padding-bottom: rem(15);
+
+    h2 {
+      color: white;
+      font-size: rem(30);
+      font-weight: 300;
+      margin-bottom: rem(40);
+    }
+
+    .btn {
+      background: white;
+      display: block;
+      color: rgb(92, 92, 92);
+      font-weight: 500;
+      line-height: 1.3;
+      padding: rem(17) rem(40);
+
+      &:hover,
+      &:focus {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.page-header {
+  color: $brand-primary;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  h1 {
+    font-weight: 400;
+    font-size: rem(32);
+  }
+}
+
+.page-content {
+  padding-right: rem(80);
+}

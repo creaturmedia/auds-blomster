@@ -2,7 +2,12 @@
 
 @section('content')
   @while(have_posts()) @php the_post() @endphp
-    @include('partials.page-header')
-    @include('partials.content-page')
+    <div class="row content">
+      <div class="col--half page-content">
+        @include('partials.page-header')
+        @include('partials.content-page')
+      </div>
+      @include('partials.sidebar-images')
+    </div>
   @endwhile
 @endsection

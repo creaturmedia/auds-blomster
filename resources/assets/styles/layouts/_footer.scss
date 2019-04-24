@@ -6,8 +6,11 @@
   font-size: rem(18);
 
   .row {
+    margin: 0 rem(90);
+
     @include media-breakpoint-down(xs) {
       display: block;
+      margin: 0;
     }
   }
 
