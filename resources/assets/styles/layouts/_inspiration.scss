@@ -1,0 +1,44 @@
+.inspiration-links {
+  text-align: center;
+  margin-bottom: rem(120);
+  justify-content: space-between;
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: rme(80);
+  }
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+    margin-bottom: rem(40);
+  }
+
+  &__item {
+    background: red;
+    padding-bottom: rem(15);
+    padding-top: rem(50);
+    max-width: calc(50% - 10px);
+    flex-basis: calc(50% - 10px);
+    padding-left: rem(160);
+    padding-right: rem(160);
+
+    @include media-breakpoint-down(md) {
+      padding: rem(30);
+    }
+
+    @include media-breakpoint-down(sm) {
+      max-width: 100%;
+      padding-left: rem(30);
+      padding-right: rem(30);
+    }
+
+    p {
+      font-weight: 300;
+      font-size: rem(30);
+      color: white;
+    }
+
+    .btn {
+      font-size: rem(24);
+    }
+  }
+}

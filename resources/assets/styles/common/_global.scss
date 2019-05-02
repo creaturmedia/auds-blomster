@@ -9,6 +9,10 @@ body {
   font-family: brandon-grotesque, sans-serif;
   color: rgb(112, 112, 112);
   font-size: rem(24);
+
+  @include media-breakpoint-down(xs) {
+    font-size: rem(21);
+  }
 }
 
 strong {
@@ -57,14 +61,6 @@ a {
   }
 }
 
-.content {
-  margin: rem(125) rem(90) rem(240) rem(90);
-
-  @include media-breakpoint-down(xs) {
-    margin: 0;
-  }
-}
-
 .col {
   flex: 1;
   max-width: 100%;
@@ -100,5 +96,17 @@ a {
 
   &--vertical-align {
     align-items: center;
+  }
+}
+
+.content {
+  margin: rem(125) rem(90) rem(240) rem(90);
+
+  @include media-breakpoint-down(sm) {
+    display: block;
+  }
+
+  @include media-breakpoint-down(xs) {
+    margin: 0 rem(-30);
   }
 }

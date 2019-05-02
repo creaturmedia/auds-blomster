@@ -1,0 +1,7 @@
+@include media-breakpoint-down(xs) {
+  .template-frontpage {
+    .sidebar-images {
+      display: none;
+    }
+  }
+}

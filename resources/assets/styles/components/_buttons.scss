@@ -1,0 +1,13 @@
+.btn {
+  background: white;
+  display: inline-block;
+  color: rgb(92, 92, 92);
+  font-weight: 500;
+  line-height: 1.3;
+  padding: rem(17) rem(40);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
