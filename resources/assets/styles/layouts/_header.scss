@@ -53,7 +53,11 @@
 
         &:hover,
         &:focus {
-          color: $brand-primary;
+          color: $green;
+
+          .funeral-site & {
+            color: $purple;
+          }
         }
       }
     }
@@ -106,6 +110,10 @@
         transition: 0.25s ease-in-out;
         background: $green;
 
+        .funeral-site & {
+          background: $purple;
+        }
+
         &:nth-child(1) {
           top: 0;
         }
@@ -156,6 +164,16 @@
     padding-left: rem(115);
     padding-right: rem(100);
 
+    .funeral-site & {
+      .mobile-menu {
+        li {
+          a {
+            color: $purple !important;
+          }
+        }
+      }
+    }
+
     .open & {
       display: block;
       margin: rem(70) 0;
@@ -173,7 +191,7 @@
 
           a {
             display: block;
-            color: $brand-primary;
+            color: $green;
           }
 
           > ul {
@@ -199,7 +217,7 @@
           &.mobile-menu__item--parent {
             &::before {
               content: "";
-              border: solid $brand-primary;
+              border: solid $green;
               border-width: 0 2px 2px 0;
               display: inline-block;
               padding: 4px;
@@ -208,6 +226,10 @@
               position: absolute;
               left: rem(-30);
               top: rem(10);
+
+              .funeral-site & {
+                border: solid $purple;
+              }
             }
 
             &.open {

@@ -25,7 +25,11 @@ h3,
 h4,
 h5 {
   font-weight: 400;
-  color: $brand-primary;
+  color: $green;
+
+  .funeral-site & {
+    color: $purple;
+  }
 }
 
 .text-right {
@@ -41,9 +45,13 @@ p {
 }
 
 a {
-  color: $brand-primary;
+  color: $green;
   text-decoration: none;
   transition: background 0.2s linear, color 0.1s linear;
+
+  .funeral-site & {
+    color: $purple;
+  }
 
   &:hover,
   &:focus {

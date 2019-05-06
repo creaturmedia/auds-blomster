@@ -1,7 +1,11 @@
 <!doctype html>
 <html {!! get_language_attributes() !!}>
   @include('partials.head')
-  <body @php body_class() @endphp>
+    @if(get_field('is_funeral_site', 'option'))
+      <body @php body_class('funeral-site') @endphp>
+    @else
+      <body @php body_class() @endphp>
+    @endif
     @php do_action('get_header') @endphp
     @include('partials.header')
     @if(is_page_template('views/template-frontpage.blade.php'))

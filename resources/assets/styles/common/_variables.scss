@@ -1,12 +1,11 @@
-/** Colors */
-$brand-primary:         rgb(89, 112, 93);
-
 /** Box Model  */
 $spacer:                2rem;
 
-$green: rgba(144, 171, 150, 0.8);
+$splash-green: rgba(144, 171, 150, 0.8);
+$green: #59705d;
 $lightgreen: rgb(225, 233, 227);
-$purple: rgb(70, 40, 75);
+$purple: #46284b;
+$lightpurple: rgb(241, 236, 245);
 
 $grid-breakpoints: (
   xs: 0,
