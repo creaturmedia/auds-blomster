@@ -10,6 +10,13 @@ export default {
       event.preventDefault();
       $(this).parent().toggleClass('open');
     });
+
+    $('.slider').slick({
+      infinite: false,
+      slidesToShow: 3,
+      slidesToScroll: 3,
+    });
+
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

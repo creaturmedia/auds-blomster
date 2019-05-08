@@ -11,11 +11,19 @@
     @if(is_page_template('views/template-frontpage.blade.php'))
       @include('partials.page-banner')
     @endif
-    <main class="wrap container" role="document">
+    @if(is_page_template('views/template-frontpage-rb.blade.php'))
+      @include('partials.page-banner')
+    @endif
+    @if(is_page_template('views/template-two-column.blade.php'))
+      <main class="wrap" role="document">
+    @else
+      <main class="wrap container" role="document">
+    @endif
           @yield('content')
     </main>
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>

@@ -5,3 +5,29 @@
     }
   }
 }
+
+.frontpage-blocks {
+  justify-content: space-between;
+
+  &__item {
+    background: red;
+    flex: 1;
+    flex-basis: calc(50% - 10px);
+    max-width: calc(50% - 10px);
+    width: 100%;
+    min-height: 1px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    padding-top: rem(110);
+    padding-bottom: rem(50);
+
+    h2 {
+      color: white;
+      font-weight: 300;
+      font-size: rem(30);
+      line-height: 1.43;
+      margin-bottom: rem(70);
+    }
+  }
+}

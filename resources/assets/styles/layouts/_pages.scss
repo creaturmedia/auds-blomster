@@ -50,31 +50,43 @@
         margin: 0 auto;
       }
     }
+
+    &.right {
+      max-width: 1560px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      padding-right: rem(190);
+
+      img {
+        float: right;
+      }
+    }
   }
 
   &__cta {
     position: absolute;
-    bottom: rem(225);
-    right: rem(300);
-    padding: rem(45) rem(200) rem(15) rem(200);
-    width: rem(650);
+    max-width: 1560px;
+    margin: 0 auto;
+    bottom: rem(160);
     text-align: center;
+    left: 0;
+    right: 0;
 
     @include media-breakpoint-down(lg) {
       bottom: rem(100);
       right: rem(50);
       width: rem(400);
-      padding: rem(30) rem(30) 0 rem(30);
+      left: auto;
+      margin: 0;
     }
 
     @include media-breakpoint-down(sm) {
       position: static;
       width: 100%;
-      padding-bottom: rem(30);
     }
 
     @include media-breakpoint-down(xs) {
-      padding: rem(30) rem(30) 0 rem(30);
       bottom: rem(30);
       left: rem(30);
       right: rem(30);
@@ -82,22 +94,48 @@
       position: absolute;
     }
 
-    @include media-breakpoint-down(xs) {
-      .btn {
-        width: 100%;
-        padding: rem(15) 0;
-      }
-    }
+    &__inner {
+      width: rem(660);
+      padding: rem(45) rem(200) rem(15) rem(200);
+      float: right;
+      margin-right: rem(110);
 
-    h2 {
-      color: white;
-      font-size: rem(30);
-      font-weight: 300;
-      margin-bottom: rem(40);
+      @include media-breakpoint-down(lg) {
+        padding: rem(30) rem(30) 0 rem(30);
+      }
+
+      @include media-breakpoint-down(sm) {
+        float: none;
+        padding-bottom: rem(30);
+        width: 100%;
+      }
+
+      @include media-breakpoint-down(sm) {
+        padding: rem(30);
+      }
 
       @include media-breakpoint-down(xs) {
-        font-size: rem(25);
-        margin-bottom: rem(20);
+        .btn {
+          width: 100%;
+          padding: rem(15) 0;
+        }
+      }
+
+      h2 {
+        color: white;
+        font-size: rem(30);
+        font-weight: 300;
+        margin-bottom: rem(40);
+
+        .funeral-site & {
+          margin-left: rem(20);
+          margin-right: rem(20);
+        }
+
+        @include media-breakpoint-down(xs) {
+          font-size: rem(25);
+          margin-bottom: rem(20);
+        }
       }
     }
   }
@@ -131,6 +169,29 @@
     flex-basis: 100%;
     min-width: 100%;
     padding: 0 rem(30);
+  }
+
+  .intro {
+    font-size: rem(27);
+    color: #46284baa;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: rem(32);
+    margin-bottom: rem(30);
+  }
+
+  h3 {
+    font-size: rem(28);
+    color: #707070;
+  }
+
+  .btn {
+    background: $purple;
+    color: white;
+    margin: rem(50) 0;
   }
 }
 

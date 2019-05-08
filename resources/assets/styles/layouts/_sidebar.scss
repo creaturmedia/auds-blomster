@@ -13,3 +13,36 @@
     min-width: 100%;
   }
 }
+
+.featured-image {
+  &__container {
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    min-width: 100%;
+  }
+
+  @include media-breakpoint-down(xs) {
+    order: 1;
+    flex-basis: 100%;
+    min-width: 100%;
+  }
+
+  .btn {
+    position: absolute;
+    bottom: rem(95);
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    width: rem(292);
+    text-align: center;
+    background: $purple;
+    color: white;
+    display: block;
+  }
+}

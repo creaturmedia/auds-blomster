@@ -3,3 +3,120 @@
 // TODO: .search-form label {}
 // TODO: .search-form .search-field {}
 // TODO: .search-form .search-submit {}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgb(202, 202, 202);
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+  color: rgb(202, 202, 202);
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+  color: rgb(202, 202, 202);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: rgb(202, 202, 202);
+}
+
+.bottom-form {
+  margin-top: rem(130);
+  background: rgb(228, 224, 229);
+  padding: rem(85) rem(140) rem(50) rem(140);
+
+  .validation_error,
+  .validation_message {
+    color: red;
+  }
+
+  .validation_error {
+    margin-bottom: rem(20);
+  }
+
+  .gform_wrapper {
+    .gform_heading {
+      margin-bottom: rem(55);
+
+      h3.gform_title {
+        font-size: rem(32);
+      }
+    }
+
+    .gform_body {
+      .gform_fields {
+        .gfield {
+          margin-bottom: rem(50);
+          clear: both;
+
+          &.left,
+          &.right {
+            width: 50%;
+            float: left;
+            clear: none;
+          }
+
+          &.left {
+            padding-right: rem(85);
+          }
+
+          &.right {
+            padding-left: rem(85);
+          }
+
+          .gfield_label {
+            font-size: rem(24);
+            color: #707070;
+            margin-bottom: rem(10);
+            display: block;
+          }
+
+          .ginput_container {
+            input,
+            textarea,
+            select {
+              width: 100%;
+              font-size: rem(24);
+              display: block;
+              padding: 0 rem(5);
+            }
+
+            textarea {
+              height: rem(100);
+            }
+          }
+
+          .clear-multi {
+            .ginput_container {
+              display: inline-block;
+
+              input {
+                width: auto;
+                display: inline-block;
+              }
+
+              label {
+                display: block;
+              }
+
+              &.gfield_time_hour input {
+                width: rem(100);
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .gform_footer {
+      margin-top: rem(75);
+
+      .gform_button {
+        background: $purple;
+        color: white;
+        font-size: rem(24);
+        font-weight: 500;
+      }
+    }
+  }
+}

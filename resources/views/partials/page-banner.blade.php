@@ -11,13 +11,15 @@
   @endif
 
   @if(get_field('aktivere_knappen'))
-  <div class="page-banner__cta" @if(get_field('knappe_boks_farge')) style="background:{{ get_field('knappe_boks_farge') }}" @endif>
-    @if (get_field('knappetittel'))
-      <h2>{{ get_field('knappetittel') }}</h2>
-    @endif
-    <p>
-      <a class="btn" href="{{ get_field('knappe_url') }}">{{ get_field('knappetikett') }}</a>
-    </p>
+  <div class="page-banner__cta">
+    <div class="page-banner__cta__inner" @if(get_field('knappe_boks_farge')) style="background:{{ get_field('knappe_boks_farge') }}" @endif>
+      @if (get_field('knappetittel'))
+        <h2>{{ get_field('knappetittel') }}</h2>
+      @endif
+      <p>
+        <a class="btn" href="{{ get_field('knappe_url') }}">{{ get_field('knappetikett') }}</a>
+      </p>
+    </div>
   </div>
   @endif
 

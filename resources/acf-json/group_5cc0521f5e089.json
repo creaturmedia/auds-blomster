@@ -229,6 +229,13 @@
                 "operator": "==",
                 "value": "views\/template-frontpage.blade.php"
             }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "views\/template-frontpage-rb.blade.php"
+            }
         ]
     ],
     "menu_order": 0,
@@ -239,5 +246,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1556109074
+    "modified": 1557128207
 }
