@@ -72,7 +72,10 @@
         }
 
         .menu__sub-menu {
-          display: block;
+          .funeral-site & {
+            display: block;
+          }
+
           position: absolute;
           top: 120px;
           left: 0;
