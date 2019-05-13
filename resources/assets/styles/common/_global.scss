@@ -18,6 +18,10 @@ body {
   @include media-breakpoint-down(xs) {
     font-size: rem(21);
   }
+
+  &.page-template-template-splashscreen {
+    margin-top: 0;
+  }
 }
 
 strong {
