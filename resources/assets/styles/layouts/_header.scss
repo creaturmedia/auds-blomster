@@ -25,6 +25,12 @@
 
       .funeral-site & {
         width: rem(340);
+        height: auto;
+
+        @include media-breakpoint-down(sm) {
+          height: rem(42);
+          width: auto;
+        }
       }
 
       @include media-breakpoint-down(sm) {

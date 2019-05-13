@@ -110,6 +110,10 @@ a {
 .content {
   margin: rem(125) rem(90) rem(240) rem(90);
 
+  .template-frontpage-rb & {
+    margin-top: rem(20);
+  }
+
   @include media-breakpoint-down(sm) {
     display: block;
   }
