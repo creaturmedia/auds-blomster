@@ -13,6 +13,10 @@
 
   .funeral-site & {
     height: rem(130);
+
+    @include media-breakpoint-down(sm) {
+      height: auto;
+    }
   }
 
   .open & {
