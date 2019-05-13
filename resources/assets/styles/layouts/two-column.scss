@@ -1,6 +1,10 @@
 .two-column-layout {
   margin-top: rem(35);
 
+  @include media-breakpoint-down(sm) {
+    margin-top: 0;
+  }
+
   .text-right {
     text-align: left;
 
@@ -9,11 +13,29 @@
       padding-left: rem(80);
       padding-right: 0;
       padding-bottom: rem(40);
+
+      @include media-breakpoint-down(sm) {
+        padding-left: 0;
+      }
+
+      @include media-breakpoint-down(xs) {
+        padding: 0 rem(30);
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      .featured-image {
+        order: 2;
+      }
     }
   }
 
   &__container {
     padding-top: rem(90);
+
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+    }
 
     &:nth-child(even) {
       background: rgb(249, 248, 249);
@@ -25,6 +47,10 @@
 
       .page-content {
         margin-top: rem(85);
+
+        @include media-breakpoint-down(sm) {
+          max-width: none;
+        }
       }
 
       .featured-image {
@@ -51,11 +77,20 @@
     .page-content {
       padding-bottom: rem(40);
       padding-right: 0;
+
+      @include media-breakpoint-down(xs) {
+        padding: 0 rem(30);
+      }
     }
   }
 
   .kister-urner {
     padding-bottom: rem(80);
+
+    @include media-breakpoint-down(sm) {
+      padding: 0 rem(20);
+      text-align: center;
+    }
 
     .page-content {
       padding-bottom: rem(90);
@@ -64,6 +99,10 @@
     &__container {
       &__item {
         margin-bottom: rem(100);
+
+        @include media-breakpoint-down(sm) {
+          padding: 0 rem(10);
+        }
 
         img {
           margin-bottom: rem(40);

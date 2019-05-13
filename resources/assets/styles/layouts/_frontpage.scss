@@ -9,6 +9,11 @@
 .frontpage-blocks {
   justify-content: space-between;
 
+  @include media-breakpoint-down(sm) {
+    display: block;
+    margin: 0 rem(20);
+  }
+
   &__item {
     background: red;
     flex: 1;
@@ -22,12 +27,17 @@
     padding-top: rem(110);
     padding-bottom: rem(50);
 
+    @include media-breakpoint-down(sm) {
+      max-width: none;
+    }
+
     h2 {
       color: white;
       font-weight: 300;
       font-size: rem(30);
       line-height: 1.43;
       margin-bottom: rem(70);
+      padding: 0 rem(30);
     }
   }
 }

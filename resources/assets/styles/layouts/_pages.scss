@@ -102,6 +102,7 @@
 
       @include media-breakpoint-down(lg) {
         padding: rem(30) rem(30) 0 rem(30);
+        margin-right: rem(60);
       }
 
       @include media-breakpoint-down(sm) {
@@ -160,14 +161,14 @@
   }
 
   @include media-breakpoint-down(sm) {
-    min-width: 100%;
+    min-width: none;
     padding-right: 0;
   }
 
   @include media-breakpoint-down(xs) {
     order: 2;
     flex-basis: 100%;
-    min-width: 100%;
+    min-width: none;
     padding: 0 rem(30);
   }
 

@@ -25,6 +25,10 @@
   background: rgb(228, 224, 229);
   padding: rem(85) rem(140) rem(50) rem(140);
 
+  @include media-breakpoint-down(sm) {
+    padding: rem(85) rem(60) rem(50) rem(60);
+  }
+
   .validation_error,
   .validation_message {
     color: red;
@@ -54,14 +58,35 @@
             width: 50%;
             float: left;
             clear: none;
+
+            @include media-breakpoint-down(xs) {
+              float: none;
+              width: 100%;
+            }
           }
 
           &.left {
             padding-right: rem(85);
+
+            @include media-breakpoint-down(sm) {
+              padding-right: 30px;
+            }
+
+            @include media-breakpoint-down(xs) {
+              padding-right: 0;
+            }
           }
 
           &.right {
             padding-left: rem(85);
+
+            @include media-breakpoint-down(sm) {
+              padding-left: 30px;
+            }
+
+            @include media-breakpoint-down(xs) {
+              padding-left: 0;
+            }
           }
 
           .gfield_label {
