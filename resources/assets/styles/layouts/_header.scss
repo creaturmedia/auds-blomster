@@ -85,8 +85,9 @@
       &--parent--active {
         a {
           color: $green;
+          font-weight: 500;
 
-          .funeral-site {
+          .funeral-site & {
             color: #46284bcc;
           }
         }
