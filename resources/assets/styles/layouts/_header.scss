@@ -68,7 +68,11 @@
       &--active,
       &--parent--active {
         a {
-          color: #46284bcc;
+          color: $green;
+
+          .funeral-site {
+            color: #46284bcc;
+          }
         }
 
         .menu__sub-menu {
