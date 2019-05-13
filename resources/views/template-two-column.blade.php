@@ -101,17 +101,17 @@
                 page-content">
                     @if (get_sub_field('tittel'))<h2>{!! get_sub_field('tittel') !!}</h2>@endif
                     {!! get_sub_field('tekst') !!}
-                </div>
 
-                @if( $images = get_sub_field('bilder') )
-                    <div class="slider">
-                        @foreach( $images as $image )
-                            <div>
-                              {!! wp_get_attachment_image( $image['ID'], 'slider' ) !!}
-                            </div>
-                        @endforeach
-                    </div>
-                @endif
+                    @if( $images = get_sub_field('bilder') )
+                        <div class="slider">
+                            @foreach( $images as $image )
+                                <div>
+                                  {!! wp_get_attachment_image( $image['ID'], 'slider' ) !!}
+                                </div>
+                            @endforeach
+                        </div>
+                    @endif
+                </div>
               </div>
             </div>
           @endif

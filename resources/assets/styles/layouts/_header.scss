@@ -11,6 +11,10 @@
     position: static;
   }
 
+  .funeral-site & {
+    height: rem(130);
+  }
+
   .open & {
     position: fixed;
     bottom: 0;
@@ -95,7 +99,8 @@
 
         .menu__sub-menu {
           .funeral-site & {
-            display: block;
+            display: flex;
+            top: 130px;
           }
 
           position: absolute;
@@ -104,16 +109,34 @@
           right: 0;
           margin: 0 auto;
           background: #f1ecf5;
-          padding: rem(10) calc((100% - 1560px) / 2);
+          padding: rem(10) calc(((100% - 1560px) / 2) + 110px);
           text-align: center;
           font-style: italic;
           font-weight: 300;
+          flex-wrap: wrap;
+          justify-content: space-between;
+
+          @include media-breakpoint-down(lg) {
+            padding: rem(10) rem(110);
+          }
+
+          @include media-breakpoint-down(md) {
+            font-size: rem(18);
+          }
 
           li {
-            display: inline-block;
+            display: block;
+            text-align: center;
+
+            a {
+              font-weight: 300;
+              padding: 0;
+            }
 
             &.menu__item--active {
-              font-weight: 500;
+              a {
+                font-weight: 500;
+              }
             }
           }
         }
