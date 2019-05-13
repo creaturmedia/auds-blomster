@@ -189,9 +189,13 @@
   }
 
   .btn {
-    background: $purple;
+    background: rgb(143, 171, 151);
     color: white;
     margin: rem(50) 0;
+
+    .funeral-site & {
+      background: $purple;
+    }
   }
 }
 
