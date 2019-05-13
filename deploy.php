@@ -18,7 +18,7 @@ host('142.93.134.179')
     ->port(22)
     ->identityFile('~/.ssh/id_rsa')
     ->set('deploy_path', '~/{{remote_path}}');
-    
+
 
 // Tasks
 task('push', 'git checkout master && git push')->local();
@@ -33,7 +33,7 @@ task('build', 'yarn build:production')->local();
 
 // Upload the dist folder
 task('dist', function() {
-    
+
     // Upload the "dist" folder
     upload('dist/', '{{remote_path}}/dist');
     // Clean up .DS_Store files
@@ -43,7 +43,7 @@ task('dist', function() {
 
 //Flush the W3 Total Cache
 task('flush', function() {
-    
+
     cd('{{wp_path}}');
     run('wp total-cache flush all');
 });
