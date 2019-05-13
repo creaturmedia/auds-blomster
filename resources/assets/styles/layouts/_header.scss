@@ -1,5 +1,15 @@
 .banner {
   padding: rem(20) 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background: white;
+
+  @include media-breakpoint-down(sm) {
+    position: static;
+  }
 
   .open & {
     position: fixed;
@@ -87,7 +97,7 @@
           }
 
           position: absolute;
-          top: 120px;
+          top: 118px;
           left: 0;
           right: 0;
           margin: 0 auto;

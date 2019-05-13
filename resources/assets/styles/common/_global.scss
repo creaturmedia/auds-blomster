@@ -9,6 +9,11 @@ body {
   font-family: brandon-grotesque, sans-serif;
   color: rgb(112, 112, 112);
   font-size: rem(24);
+  margin-top: 118px;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 0;
+  }
 
   @include media-breakpoint-down(xs) {
     font-size: rem(21);
