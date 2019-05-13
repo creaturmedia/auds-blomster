@@ -16,7 +16,14 @@
                 {!! $hjemmeside_blokk['tekst'] !!}
               @elseif($hjemmeside_blokk['knapp_eller_tekst'] == 'knapp')
                 <p>
-                  <a class="btn" href="{{ $hjemmeside_blokk['url'] }}">{{ $hjemmeside_blokk['knappetikett'] }}</a>
+                  <a class="btn" href="
+                  @if ($hjemmeside_blokk['internal_eller_external'] == 'external')
+                    {{ $hjemmeside_blokk['external_url'] }}
+                  @else
+                    {{ $hjemmeside_blokk['url'] }}
+                  @endif
+                  ">{{ $hjemmeside_blokk['knappetikett'] }}
+                  </a>
                 </p>
               @endif
             </div>

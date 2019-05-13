@@ -134,6 +134,30 @@
                     "maxlength": ""
                 },
                 {
+                    "key": "field_5cd94612f7faa",
+                    "label": "Intern eller ekstern url",
+                    "name": "internal_eller_external",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "choices": {
+                        "internal": "internal",
+                        "external": "external"
+                    },
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "default_value": "",
+                    "layout": "horizontal",
+                    "return_format": "value",
+                    "save_other_choice": 0
+                },
+                {
                     "key": "field_5cd145b89b7e1",
                     "label": "URL",
                     "name": "url",
@@ -146,6 +170,11 @@
                                 "field": "field_5cd1456a9b7de",
                                 "operator": "==",
                                 "value": "knapp"
+                            },
+                            {
+                                "field": "field_5cd94612f7faa",
+                                "operator": "==",
+                                "value": "internal"
                             }
                         ]
                     ],
@@ -161,6 +190,30 @@
                     "allow_null": 0,
                     "allow_archives": 0,
                     "multiple": 0
+                },
+                {
+                    "key": "field_5cd94607f7fa9",
+                    "label": "External URL",
+                    "name": "external_url",
+                    "type": "url",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_5cd94612f7faa",
+                                "operator": "==",
+                                "value": "external"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": ""
                 }
             ]
         }
@@ -185,5 +238,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1557218947
+    "modified": 1557743226
 }
