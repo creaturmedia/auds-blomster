@@ -10,3 +10,4 @@ resources/assets/config-local.json
 .DS_Store
 /resources/assets/config.json
 deploy.php
+/deploy.php
