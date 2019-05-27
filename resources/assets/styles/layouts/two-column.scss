@@ -46,7 +46,7 @@
       margin-top: 0;
 
       .page-content {
-        margin-top: rem(85);
+        padding-top: rem(85);
 
         @include media-breakpoint-down(sm) {
           max-width: none;
@@ -61,6 +61,10 @@
 
   .carousel-under {
     padding-bottom: rem(240);
+
+    @include media-breakpoint-down(sm) {
+      padding-top: rem(90);
+    }
 
     &.multiple {
       h4 {
@@ -86,17 +90,17 @@
 
   .kister-urner {
     padding-bottom: rem(80);
-
-    @include media-breakpoint-down(sm) {
-      padding: 0 rem(20);
-      text-align: center;
-    }
+    background: white;
 
     .page-content {
       padding-bottom: rem(90);
     }
 
     &__container {
+      @include media-breakpoint-down(sm) {
+        padding: 0 rem(20);
+      }
+
       &__item {
         margin-bottom: rem(100);
 

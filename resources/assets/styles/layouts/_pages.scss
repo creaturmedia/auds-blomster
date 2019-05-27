@@ -58,8 +58,17 @@
       margin: 0 auto;
       padding-right: rem(190);
 
+      @include media-breakpoint-down(xs) {
+        padding-right: 0;
+        max-width: 100%;
+      }
+
       img {
         float: right;
+
+        @include media-breakpoint-down(xs) {
+          float: none;
+        }
       }
     }
   }
@@ -165,10 +174,10 @@
     padding-right: 0;
   }
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(sm) {
     order: 2;
     flex-basis: 100%;
-    min-width: none;
+    max-width: none;
     padding: 0 rem(30);
   }
 

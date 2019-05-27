@@ -7,7 +7,7 @@
     min-width: 100%;
   }
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(sm) {
     order: 1;
     flex-basis: 100%;
     min-width: 100%;
@@ -27,7 +27,7 @@
     min-width: 100%;
   }
 
-  @include media-breakpoint-down(xs) {
+  @include media-breakpoint-down(sm) {
     order: 1;
     flex-basis: 100%;
     min-width: 100%;
