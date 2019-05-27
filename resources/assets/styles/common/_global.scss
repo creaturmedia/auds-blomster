@@ -14,7 +14,7 @@ body {
   &.funeral-site {
     margin-top: 130px;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       margin-top: 0;
     }
   }

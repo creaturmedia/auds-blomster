@@ -7,14 +7,14 @@
   z-index: 1;
   background: white;
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     position: static;
   }
 
   .funeral-site & {
     height: rem(130);
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       height: auto;
     }
   }
@@ -30,7 +30,7 @@
     overflow-y: scroll;
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     .container {
       justify-content: space-between;
     }
@@ -65,7 +65,7 @@
     padding-left: rem(65);
     margin-top: rem(20);
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       display: none;
     }
   }
@@ -158,7 +158,7 @@
     padding: 0;
     display: none;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       display: block;
     }
 
