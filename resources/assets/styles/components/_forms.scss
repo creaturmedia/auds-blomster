@@ -104,10 +104,17 @@
               font-size: rem(24);
               display: block;
               padding: 0 rem(5);
+              font-family: "brandon-grotesque", sans-serif;
             }
 
             textarea {
               height: rem(100);
+            }
+
+            select {
+              -webkit-border-radius: 0;
+              border: none;
+              padding: 0 rem(5);
             }
           }
 
