@@ -93,6 +93,11 @@
     @include media-breakpoint-down(sm) {
       position: static;
       width: 100%;
+
+      .funeral-site & {
+        margin: 0 rem(130);
+        width: auto;
+      }
     }
 
     @include media-breakpoint-down(xs) {
@@ -101,6 +106,10 @@
       right: rem(30);
       width: auto;
       position: absolute;
+
+      .funeral-site & {
+        margin: 0;
+      }
     }
 
     &__inner {
