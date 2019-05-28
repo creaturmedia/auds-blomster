@@ -19,7 +19,7 @@ body {
     }
   }
 
-  @include media-breakpoint-down(sm) {
+  @include media-breakpoint-down(md) {
     margin-top: 0;
   }
 
@@ -112,6 +112,13 @@ a {
 
     flex-basis: 66.666%;
     max-width: 66.666%;
+  }
+
+  &--full {
+    @extend .col;
+
+    flex-basis: 100%;
+    max-width: 100%;
   }
 }
 
