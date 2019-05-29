@@ -53,7 +53,7 @@
                     <div class="kister-urner__container row">
                         @foreach( $kister_urner as $kiste )
                             <div class="kister-urner__container__item col--half">
-                              <img src="{!! $kiste['bilde']['sizes']['kiste'] !!}"  />
+                              <a rel="lightbox" href="{!! $kiste['bilde']['sizes']['large']; !!}"><img src="{!! $kiste['bilde']['sizes']['kiste'] !!}"  /></a>
                               @if ($kiste['tittel'])
                                 <p>{{ $kiste['tittel'] }}</p>
                               @endif
@@ -82,7 +82,7 @@
                             <div class="slider">
                                 @foreach( $images as $image )
                                     <div>
-                                      {!! wp_get_attachment_image( $image['ID'], 'slider' ) !!}
+                                      <a rel="lightbox" href="{!! $image['sizes']['large']; !!}">{!! wp_get_attachment_image( $image['ID'], 'slider' ) !!}</a>
                                     </div>
                                 @endforeach
                             </div>
