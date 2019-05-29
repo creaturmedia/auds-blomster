@@ -106,7 +106,7 @@
                         <div class="slider">
                             @foreach( $images as $image )
                                 <div>
-                                  {!! wp_get_attachment_image( $image['ID'], 'slider' ) !!}
+                                  <a rel="lightbox" href="{!! $image['sizes']['large']; !!}">{!! wp_get_attachment_image( $image['ID'], 'slider' ) !!}</a>
                                 </div>
                             @endforeach
                         </div>
